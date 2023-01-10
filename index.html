@@ -7,27 +7,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <main>
+    <section class="card-layout">
 
-  How did we do?
+      <form id="rating" action="" method="post">
+        <h2>How did we do?</h2>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+        
+        <div class="rating-selection-btns">
+          <input type="radio" name="" id="one" value="">
+          <label for="one">1</label>
+          <input type="radio" name="" id="two" value="">
+          <label for="two">2</label>
+          <input type="radio" name="" id="three" value="">
+          <label for="three">3</label>
+          <input type="radio" name="" id="four " value="">
+          <label for="four">4</label>
+          <input type="radio" name="" id="five" value="">
+          <label for="five">5</label>
+        </div>
+    
 
-  1 2 3 4 5
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
-  Submit
-
-  <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
@@ -43,7 +56,8 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Nathan Soh</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
