@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
- 
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <main>
-    <section class="card-layout">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="center">
+    <main>
+      <section class="card-layout">
+        <img class="circle" src="images/icon-star.svg" alt="star-icon" />
 
-      <form id="rating" action="" method="post">
-        <h2>How did we do?</h2>
+        <form id="rating" action="" method="post">
+          <h2>How did we do?</h2>
 
-        <p>Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-        
-        <div class="rating-selection-btns">
-          <input type="radio" name="" id="one" value="">
-          <label for="one">1</label>
-          <input type="radio" name="" id="two" value="">
-          <label for="two">2</label>
-          <input type="radio" name="" id="three" value="">
-          <label for="three">3</label>
-          <input type="radio" name="" id="four " value="">
-          <label for="four">4</label>
-          <input type="radio" name="" id="five" value="">
-          <label for="five">5</label>
-        </div>
-    
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+          <div class="selection">
 
+            <div class="circle">
+              <label for="one">1</label>
+              <input type="radio" name="rate" id="one" value="1">
+            </div>
 
-  <!-- Thank you state start -->
+            <div class="circle">
+              <label for="two">2</label>
+              <input type="radio" name="rate" id="two" value="2">
+            </div>
 
-  You selected <!-- Add rating here --> out of 5
+            <div class="circle">
+              <label for="three">3</label>
+              <input type="radio" name="rate" id="three" value="3">
+            </div>
 
-  Thank you!
+            <div class="circle">
+              <label for="four">4</label>
+              <input type="radio" name="rate" id="four" value="4">
+            </div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+            <div class="circle">
+              <label for="five">5</label>
+              <input type="radio" name="rate" id="five" value="5">
+            </div>
 
-  <!-- Thank you state end -->
+          </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Nathan Soh</a>.
-  </div>
-  <script src="index.js"></script>
-</body>
+          <div class="btn-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Thank you state start -->
+
+    You selected
+    <!-- Add rating here -->
+    out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch!
+
+    <!-- Thank you state end -->
+
+    <script src="index.js"></script>
+  </body>
 </html>
