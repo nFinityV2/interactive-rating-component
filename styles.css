@@ -83,7 +83,7 @@ button:hover {
     cursor: pointer;
 }
 
-.circle:active {
+.selected {
     color:white;
     background-color: hsl(217, 12%, 63%);
 }
